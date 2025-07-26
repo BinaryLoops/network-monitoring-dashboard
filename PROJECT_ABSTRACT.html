@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Network Protocol Analyzer - Professional CN Project</title>
+    <style>
+        body { font-family: Arial, sans-serif; line-height: 1.6; color: #333; margin: 0; padding: 20px; background-color: #f4f4f4; }
+        .container { max-width: 800px; margin: auto; background: #fff; padding: 30px; border-radius: 8px; box-shadow: 0 0 10px rgba(0,0,0,0.1); }
+        h1, h2, h3 { color: #0056b3; }
+        ul { list-style-type: disc; margin-left: 20px; }
+        pre { background: #eee; padding: 10px; border-radius: 5px; overflow-x: auto; }
+        code { font-family: 'Courier New', Courier, monospace; }
+        .note { background-color: #e6f7ff; border-left: 5px solid #3399ff; padding: 10px; margin: 20px 0; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Network Protocol Analyzer - Professional CN Project</h1>
+        <p>This project is a comprehensive network protocol analysis and performance monitoring dashboard, designed as an educational tool for Computer Networks (BCSE308L). It provides a frontend-only simulation of real-time network activity, allowing users to explore concepts related to packet capture, error detection, and network analytics without requiring a live network connection.</p>
+
+        <h2>Features</h2>
+        <ul>
+            <li><strong>Real-time Packet Capture Simulation</strong>: Generates and displays simulated network packets with details like timestamp, protocol, source/destination IP, port, size, and flags.</li>
+            <li><strong>Error Detection & Monitoring</strong>: Automatically detects and classifies simulated network errors, displaying them with severity levels (Low, Medium, High, Critical) and descriptive messages.</li>
+            <li><strong>Real-time Analytics</strong>: Provides key performance indicators such as total packets, total errors, average latency, and throughput.</li>
+            <li><strong>Protocol Distribution</strong>: Visualizes the breakdown of different network protocols in captured packets.</li>
+            <li><strong>Severity-based Color Coding</strong>: Errors are color-coded based on their severity for quick identification.</li>
+            <li><strong>Control Panel</strong>: Interactive buttons to start, stop, and clear the simulated network capture data.</li>
+            <li><strong>Download Report</strong>: Allows users to download a CSV report of captured packets and detected errors.</li>
+            <li><strong>Professional UI with Tabs</strong>: Organizes information into intuitive tabs for Live Packets, Error Detection, and Analytics.</li>
+            <li><strong>Subnet Calculator</strong>: A dedicated tool for calculating subnet masks, network addresses, broadcast addresses, and host ranges.</li>
+            <li><strong>Routing Protocols (Placeholder)</strong>: A section for future expansion on routing protocol visualizations.</li>
+            <li><strong>Network Tools (Placeholder)</strong>: A section for future expansion on various network utilities.</li>
+            <li><strong>Home Page (Placeholder)</strong>: A simple home page.</li>
+            <li><strong>Line Chart (Placeholder)</strong>: A page to demonstrate line chart capabilities.</li>
+        </ul>
+
+        <h2>Technologies Used</h2>
+        <ul>
+            <li><strong>Next.js</strong>: React framework for building the frontend application.</li>
+            <li><strong>React</strong>: JavaScript library for building user interfaces.</li>
+            <li><strong>Tailwind CSS</strong>: Utility-first CSS framework for styling.</li>
+            <li><strong>shadcn/ui</strong>: Reusable UI components built with Radix UI and Tailwind CSS.</li>
+            <li><strong>Lucide React</strong>: Icon library.</li>
+        </ul>
+
+        <h2>Setup and Running Locally</h2>
+        <ol>
+            <li><strong>Clone the repository:</strong>
+<pre><code>git clone &lt;repository-url&gt;
+cd network-protocol-analyzer</code></pre>
+            </li>
+            <li><strong>Install dependencies:</strong>
+<pre><code>npm install
+# or yarn install
+# or pnpm install</code></pre>
+            </li>
+            <li><strong>Run the development server:</strong>
+<pre><code>npm run dev
+# or yarn dev
+# or pnpm dev</code></pre>
+            </li>
+            <li><strong>Open in browser:</strong>
+                <p>Navigate to <code>http://localhost:3000</code> in your web browser.</p>
+            </li>
+        </ol>
+
+        <h2>Project Structure</h2>
+<pre><code>.
+├── app/
+│   ├── api/                  # API routes for simulated backend
+│   │   ├── network/
+│   │   │   ├── analytics/route.ts
+│   │   │   ├── clear/route.ts
+│   │   │   ├── errors/route.ts
+│   │   │   ├── packets/route.ts
+│   │   │   ├── start/route.ts
+│   │   │   ├── status/route.ts
+│   │   │   └── stop/route.ts
+│   ├── error-detection/page.tsx # Frontend for error detection details
+│   ├── home/page.tsx         # Simple home page
+│   ├── layout.tsx            # Root layout for the application
+│   ├── line-chart/page.tsx   # Frontend for line chart visualization
+│   ├── loading.tsx           # Loading UI for Next.js Suspense
+│   ├── page.tsx              # Main dashboard (Protocol Analyzer)
+│   ├── performance/page.tsx  # Frontend for performance metrics
+│   ├── reports/page.tsx      # Frontend for report generation
+│   ├── routing/page.tsx      # Frontend for routing protocols
+│   └── subnet-calculator/page.tsx # Frontend for subnet calculator
+│   └── tools/page.tsx        # Frontend for network tools
+├── components/
+│   ├── navigation.tsx        # Main navigation component
+│   ├── theme-provider.tsx    # Theme provider for dark/light mode
+│   └── ui/                   # shadcn/ui components
+│       └── ... (various UI components like button, card, tabs, etc.)
+├── hooks/
+│   ├── use-mobile.tsx        # Custom hook for mobile detection
+│   └── use-toast.ts          # Custom hook for toast notifications
+├── lib/
+│   └── utils.ts              # Utility functions (e.g., cn for Tailwind classes)
+├── public/                   # Static assets (images, icons)
+├── styles/
+│   └── globals.css           # Global CSS styles
+├── .gitignore                # Git ignore file
+├── components.json           # shadcn/ui configuration
+├── next.config.mjs           # Next.js configuration
+├── package.json              # Project dependencies and scripts
+├── postcss.config.mjs        # PostCSS configuration
+├── README.md                 # Project README
+├── tailwind.config.ts        # Tailwind CSS configuration
+├── tsconfig.json             # TypeScript configuration
+└── vercel.json               # Vercel deployment configuration</code></pre>
+    </div>
+</body>
+</html>
