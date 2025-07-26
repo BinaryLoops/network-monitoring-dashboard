@@ -52,7 +52,7 @@ A comprehensive network protocol analysis and performance monitoring dashboard d
 
 1. **Clone the repository**
    \`\`\`bash
-   git clone https://github.com/your-username/network-protocol-analyzer.git
+   git clone https://github.com/BinaryLoops/network-protocol-analyzer.git
    cd network-protocol-analyzer
    \`\`\`
 
@@ -265,7 +265,7 @@ We welcome contributions to improve the Network Protocol Analyzer! Here's how yo
 
 **Built with ❤️ for Computer Networks Education**
 
-[⭐ Star this repo](https://github.com/your-username/network-protocol-analyzer) | [🐛 Report Bug](https://github.com/your-username/network-protocol-analyzer/issues) | [💡 Request Feature](https://github.com/your-username/network-protocol-analyzer/issues)
+[⭐ Star this repo](https://github.com/your-username/network-protocol-analyzer) | [🐛 Report Bug](https://github.com/BinaryLoops/network-protocol-analyzer/issues) | [💡 Request Feature](https://github.com/BinaryLoops/network-protocol-analyzer/issues)
 
 </div>
 
